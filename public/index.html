@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		body { padding:0; }
+		.dungeon-man-mapper {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			background-color: #EFF;
+		}
+		.dungeon-man-mapper--map-container {
+			padding: 10px;
+		}
+		.dungeon-man-mapper--map-row {
+			display: flex;
+		}
+		.dungeon-man-mapper--map-cell {
+			box-sizing: border-box;
+			width: 24px;
+			height: 24px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+		}
+		.dungeon-man-mapper--map-cell__type-none { border: 1px solid #555; background: #DDD; }
+		.dungeon-man-mapper--map-cell__type-path { border: 1px solid #999; }
+		.dungeon-man-mapper--map-cell__type-room { border: 1px solid #555; background: #EEF;}
+		.dungeon-man-mapper--map-cell__is-passed { background: #cfc; }
+		.dungeon-man-mapper--map-cell__is-start-cell { background: #efe; }
+
+
+	</style>
+</head>
+<body>
+	<div class="app-container js-dungeon-man-mapper"></div>
+	<script src="./build/index.js"></script>	
+</body>
+</html>
